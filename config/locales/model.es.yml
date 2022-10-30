@@ -1,0 +1,41 @@
+es:
+  activerecord:
+    models:
+      sector: Sector
+      sectors: Sectores
+      capacity: Capacidad
+      capacities: Capacidades
+    attributes:
+      sector:
+        name: Nombre
+      capacity:
+        sector_id: Sector
+        year: año
+        month: mes
+        percentage: porcentaje
+  
+  sectors:
+    index:
+      title: Listado de Sectores
+    new:
+      button: Cargar Sector
+      title: Cargando Sector
+    edit:
+      button: Editar Sector
+      title: Editando Sector
+    show:
+      button: Ver Sector
+      title: Viendo Sector
+
+  capacities:
+    index:
+      title: Listado de Capacidades
+    new:
+      button: Cargar Capacidad
+      title: Cargando Capacidad
+    edit:
+      button: Editar Capacidad
+      title: Editando Capacidad
+    show:
+      button: Ver Capacidad
+      title: Viendo Capacidad
