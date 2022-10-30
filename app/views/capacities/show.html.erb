@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @capacity.sector_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @capacity.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @capacity.month %>
+</p>
+
+<p>
+  <strong>Percentage:</strong>
+  <%= @capacity.percentage %>
+</p>
+
+<%= link_to 'Edit', edit_capacity_path(@capacity) %> |
+<%= link_to 'Back', capacities_path %>
