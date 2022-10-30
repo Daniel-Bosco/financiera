@@ -13,6 +13,7 @@ es:
         year: Año
         month: Mes
         percentage: Porcentaje
+        date: Fecha
   
   sectors:
     index:

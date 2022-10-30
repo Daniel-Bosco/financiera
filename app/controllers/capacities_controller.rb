@@ -68,6 +68,6 @@ class CapacitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def capacity_params
-      params.require(:capacity).permit(:sector_id, :year, :month, :percentage)
+      params.require(:capacity).permit(:sector_id, :year, :month, :percentage, :date)
     end
 end
