@@ -16,7 +16,7 @@
   <tbody>
     <% @capacities.each do |capacity| %>
       <tr>
-        <td><%= capacity.sector_id %></td>
+        <td><%= capacity.sector.name %></td>
         <td><%= capacity.year %></td>
         <td><%= capacity.month %></td>
         <td><%= capacity.percentage %></td>
