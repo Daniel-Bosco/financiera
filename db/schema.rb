@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_30_131237) do
+ActiveRecord::Schema.define(version: 2022_10_30_145836) do
 
   create_table "capacities", force: :cascade do |t|
     t.integer "sector_id", null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_10_30_131237) do
     t.float "percentage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.date "date"
     t.index ["sector_id"], name: "index_capacities_on_sector_id"
   end
 
