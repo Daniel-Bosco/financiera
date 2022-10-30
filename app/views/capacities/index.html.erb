@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Capacities</h1>
+<h1><%= t('.title') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Sector</th>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Percentage</th>
+      <th><%= t('activerecord.attributes.capacity.sector_id') %></th>
+      <th><%= t('activerecord.attributes.capacity.year') %></th>
+      <th><%= t('activerecord.attributes.capacity.month') %></th>
+      <th><%= t('activerecord.attributes.capacity.percentage') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= capacity.year %></td>
         <td><%= capacity.month %></td>
         <td><%= capacity.percentage %></td>
-        <td><%= link_to 'Show', capacity %></td>
-        <td><%= link_to 'Edit', edit_capacity_path(capacity) %></td>
-        <td><%= link_to 'Destroy', capacity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t(:ver), capacity %></td>
+        <td><%= link_to t(:editar), edit_capacity_path(capacity) %></td>
+        <td><%= link_to t(:eliminar), capacity, method: :delete, data: { confirm: t(:esta_seguro) } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Capacity', new_capacity_path %>
+<%= link_to t('capacities.new.button'), new_capacity_path %>
