@@ -1,0 +1,9 @@
+<h1>Capacidades Instaladas</h1>
+
+<%= line_chart Capacity.group_by_month(:date).sum(:percentage)  %>
+
+<%= line_chart @capacities.map { |capacity|
+    {name: capacity.name, data: capacity.feats.group_by_week(:created_at).count}
+} %>
+
+<%= console %>
