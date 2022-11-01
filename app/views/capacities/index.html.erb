@@ -6,8 +6,7 @@
   <thead>
     <tr>
       <th><%= t('activerecord.attributes.capacity.sector_id') %></th>
-      <th><%= t('activerecord.attributes.capacity.year') %></th>
-      <th><%= t('activerecord.attributes.capacity.month') %></th>
+      <th><%= t('activerecord.attributes.capacity.date') %></th>
       <th><%= t('activerecord.attributes.capacity.percentage') %></th>
       <th colspan="3"></th>
     </tr>
@@ -17,8 +16,7 @@
     <% @capacities.each do |capacity| %>
       <tr>
         <td><%= capacity.sector.name %></td>
-        <td><%= capacity.year %></td>
-        <td><%= capacity.month %></td>
+        <td><%= capacity.date %></td>
         <td><%= capacity.percentage %></td>
         <td><%= link_to t(:ver), capacity %></td>
         <td><%= link_to t(:editar), edit_capacity_path(capacity) %></td>

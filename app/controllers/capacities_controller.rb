@@ -7,7 +7,6 @@ class CapacitiesController < ApplicationController
   end
 
   def chart
-    @capacities = Capacity.all
   end
 
   # GET /capacities/1 or /capacities/1.json
@@ -69,6 +68,6 @@ class CapacitiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def capacity_params
-      params.require(:capacity).permit(:sector_id, :year, :month, :percentage, :date)
+      params.require(:capacity).permit(:sector_id, :percentage, :date)
     end
 end

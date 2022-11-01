@@ -10,8 +10,6 @@ es:
         name: Nombre
       capacity:
         sector_id: Sector
-        year: Año
-        month: Mes
         percentage: Porcentaje
         date: Fecha
   
