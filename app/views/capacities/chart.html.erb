@@ -2,8 +2,8 @@
 
 <%= line_chart Capacity.group_by_month(:date).sum(:percentage)  %>
 
-<%= line_chart @capacities.map { |capacity|
-    {name: capacity.name, data: capacity.feats.group_by_week(:created_at).count}
-} %>
+<%# <%= line_chart @sectors.map { |sector|
+    {name: sector.sector.name, data: Capacity.group_by_month(:date).sum(:percentage)}
+} %> %>
 
 <%= console %>
