@@ -7,6 +7,7 @@ class CapacitiesController < ApplicationController
   end
 
   def chart
+    @capacities = Capacity.all
   end
 
   # GET /capacities/1 or /capacities/1.json
