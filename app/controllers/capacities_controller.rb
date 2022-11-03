@@ -4,10 +4,12 @@ class CapacitiesController < ApplicationController
   # GET /capacities or /capacities.json
   def index
     @capacities = Capacity.all
+    # @capacities = Capacity.where("date BETWEEN ':year-01-01' AND ':year-12-01'", year: params[:year].to_i ) unless params[:year].blank?
   end
 
   def chart
-    @capacities = Capacity.all
+    @capacities = Capacity.where("date BETWEEN ':year-01-01' AND ':year-12-01'", year: params[:year].to_i ) unless params[:year].blank?
+
   end
 
   # GET /capacities/1 or /capacities/1.json

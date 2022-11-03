@@ -1,36 +1,18 @@
-<h1>Capacidades Instaladas</h1>
+<h1><strong>Capacidades Instaladas</strong></h1>
 
-<%#= line_chart Capacity.where(sector_id: 1, :date => "2016-01-01".to_time.."2016-12-01".to_time).group_by_month(:date).sum(:percentage)  %>
+<div class="btn-group" >
+  <%= button_to "2016",  chart_path, method: :get, params: { year: 2016 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2017",  chart_path, method: :get, params: { year: 2017 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2018",  chart_path, method: :get, params: { year: 2018 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2019",  chart_path, method: :get, params: { year: 2019 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2020",  chart_path, method: :get, params: { year: 2020 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2021",  chart_path, method: :get, params: { year: 2021 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2022",  chart_path, method: :get, params: { year: 2022 }, class: 'btn btn-dark btn-lg orden' %>
+</div>
 
-<%#= line_chart Capacity.where(sector_id: 2, :date => "2016-01-01".to_time.."2016-12-01".to_time).group_by_month(:date).sum(:percentage)  %>
-
-<%#= line_chart Capacity.where(sector_id: 3, :date => "2016-01-01".to_time.."2016-12-01".to_time).group_by_month(:date).sum(:percentage)  %>
-
-
-
-<%= line_chart Capacity.where(:date => "2016-01-01".to_time.."2016-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
+<%= line_chart @capacities.joins(:sector).group('name').group_by_month(:date).sum(:percentage),
  height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2017-01-01".to_time.."2017-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2018-01-01".to_time.."2018-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2019-01-01".to_time.."2019-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2020-01-01".to_time.."2020-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2021-01-01".to_time.."2021-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%= line_chart Capacity.where(:date => "2022-01-01".to_time.."2022-12-01".to_time).joins(:sector).group('name').group_by_month(:date).sum(:percentage),
-height: "700px", legend: "bottom", download: true %>
-
-<%#= line_chart Capacity.map { |capacity|
-    {name: capacity.sector.name, data: capacity.group_by_month(:date).sum(:percentage)}
-} %>
+<br>
+<h4>Si desea ver menos sectores, solo clickee el nombre del sector y dejara de mostrarse en pantalla</h4>
 
 <%#= console %>
