@@ -99,11 +99,8 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 53.1, date: "2016-05-01" }, { sector_id: 13, percentage: 51.9, date: "2016-06-01" },
     { sector_id: 13, percentage: 53.2, date: "2016-07-01" }, { sector_id: 13, percentage: 55.7, date: "2016-08-01" },
     { sector_id: 13, percentage: 56.0, date: "2016-09-01" }, { sector_id: 13, percentage: 57.2, date: "2016-10-01" },
-    { sector_id: 13, percentage: 54.8, date: "2016-11-01" }, { sector_id: 13, percentage: 54.7, date: "2016-12-01" }
-])
+    { sector_id: 13, percentage: 54.8, date: "2016-11-01" }, { sector_id: 13, percentage: 54.7, date: "2016-12-01" },
 
-#2017
-capacities = Capacity.create([
     { sector_id: 1, percentage: 60.6, date: "2017-01-01" }, { sector_id: 1, percentage: 65.1, date: "2017-02-01" },
     { sector_id: 1, percentage: 60.0, date: "2017-03-01" }, { sector_id: 1, percentage: 67.3, date: "2017-04-01" },
     { sector_id: 1, percentage: 65.7, date: "2017-05-01" }, { sector_id: 1, percentage: 66.3, date: "2017-06-01" },
@@ -193,76 +190,8 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 50.5, date: "2017-05-01" }, { sector_id: 13, percentage: 54.7, date: "2017-06-01" },
     { sector_id: 13, percentage: 54.5, date: "2017-07-01" }, { sector_id: 13, percentage: 62.3, date: "2017-08-01" },
     { sector_id: 13, percentage: 58.8, date: "2017-09-01" }, { sector_id: 13, percentage: 61.2, date: "2017-10-01" },
-    { sector_id: 13, percentage: 58.6, date: "2017-11-01" }, { sector_id: 13, percentage: 55.6, date: "2017-12-01" }
-])
+    { sector_id: 13, percentage: 58.6, date: "2017-11-01" }, { sector_id: 13, percentage: 55.6, date: "2017-12-01" },
 
-#2018
-capacities = Capacity.create([
-    { sector_id: 1, percentage: 60.6, date: "2017-01-01" }, { sector_id: 1, percentage: 65.1, date: "2017-02-01" },
-    { sector_id: 1, percentage: 60.0, date: "2017-03-01" }, { sector_id: 1, percentage: 67.3, date: "2017-04-01" },
-    { sector_id: 1, percentage: 65.7, date: "2017-05-01" }, { sector_id: 1, percentage: 66.3, date: "2017-06-01" },
-    { sector_id: 1, percentage: 64.5, date: "2017-07-01" }, { sector_id: 1, percentage: 68.3, date: "2017-08-01" },
-    { sector_id: 1, percentage: 65.8, date: "2017-09-01" }, { sector_id: 1, percentage: 69.2, date: "2017-10-01" },
-    { sector_id: 1, percentage: 67.1, date: "2017-11-01" }, { sector_id: 1, percentage: 64.0, date: "2017-12-01" },
-
-    { sector_id: 2, percentage: 65.1, date: "2017-01-01" }, { sector_id: 2, percentage: 63.9, date: "2017-02-01" },
-    { sector_id: 2, percentage: 62.4, date: "2017-03-01" }, { sector_id: 2, percentage: 65.9, date: "2017-04-01" },
-    { sector_id: 2, percentage: 70.2, date: "2017-05-01" }, { sector_id: 2, percentage: 63.8, date: "2017-06-01" },
-    { sector_id: 2, percentage: 64.3, date: "2017-07-01" }, { sector_id: 2, percentage: 66.3, date: "2017-08-01" },
-    { sector_id: 2, percentage: 65.0, date: "2017-09-01" }, { sector_id: 2, percentage: 67.7, date: "2017-10-01" },
-    { sector_id: 2, percentage: 64.3, date: "2017-11-01" }, { sector_id: 2, percentage: 61.2, date: "2017-12-01" },
-
-    { sector_id: 3, percentage: 80.3, date: "2017-01-01" }, { sector_id: 3, percentage: 83.1, date: "2017-02-01" },
-    { sector_id: 3, percentage: 78.3, date: "2017-03-01" }, { sector_id: 3, percentage: 77.0, date: "2017-04-01" },
-    { sector_id: 3, percentage: 76.0, date: "2017-05-01" }, { sector_id: 3, percentage: 77.3, date: "2017-06-01" },
-    { sector_id: 3, percentage: 62.4, date: "2017-07-01" }, { sector_id: 3, percentage: 71.6, date: "2017-08-01" },
-    { sector_id: 3, percentage: 71.7, date: "2017-09-01" }, { sector_id: 3, percentage: 70.5, date: "2017-10-01" },
-    { sector_id: 3, percentage: 76.1, date: "2017-11-01" }, { sector_id: 3, percentage: 61.8, date: "2017-12-01" },
-
-    { sector_id: 4, percentage: 57.5, date: "2017-01-01" }, { sector_id: 4, percentage: 65.5, date: "2017-02-01" },
-    { sector_id: 4, percentage: 53.9, date: "2017-03-01" }, { sector_id: 4, percentage: 69.1, date: "2017-04-01" },
-    { sector_id: 4, percentage: 57.3, date: "2017-05-01" }, { sector_id: 4, percentage: 68.3, date: "2017-06-01" },
-    { sector_id: 4, percentage: 54.9, date: "2017-07-01" }, { sector_id: 4, percentage: 62.5, date: "2017-08-01" },
-    { sector_id: 4, percentage: 61.4, date: "2017-09-01" }, { sector_id: 4, percentage: 60.9, date: "2017-10-01" },
-    { sector_id: 4, percentage: 66.2, date: "2017-11-01" }, { sector_id: 4, percentage: 55.7, date: "2017-12-01" },
-
-    { sector_id: 5, percentage: 80.0, date: "2017-01-01" }, { sector_id: 5, percentage: 81.6, date: "2017-02-01" },
-    { sector_id: 5, percentage: 85.0, date: "2017-03-01" }, { sector_id: 5, percentage: 88.0, date: "2017-04-01" },
-    { sector_id: 5, percentage: 87.7, date: "2017-05-01" }, { sector_id: 5, percentage: 82.5, date: "2017-06-01" },
-    { sector_id: 5, percentage: 79.6, date: "2017-07-01" }, { sector_id: 5, percentage: 86.8, date: "2017-08-01" },
-    { sector_id: 5, percentage: 71.8, date: "2017-09-01" }, { sector_id: 5, percentage: 82.7, date: "2017-10-01" },
-    { sector_id: 5, percentage: 77.0, date: "2017-11-01" }, { sector_id: 5, percentage: 72.8, date: "2017-12-01" },
-
-    { sector_id: 6, percentage: 54.0, date: "2017-01-01" }, { sector_id: 6, percentage: 59.1, date: "2017-02-01" },
-    { sector_id: 6, percentage: 47.6, date: "2017-03-01" }, { sector_id: 6, percentage: 54.1, date: "2017-04-01" },
-    { sector_id: 6, percentage: 55.5, date: "2017-05-01" }, { sector_id: 6, percentage: 63.0, date: "2017-06-01" },
-    { sector_id: 6, percentage: 56.0, date: "2017-07-01" }, { sector_id: 6, percentage: 61.6, date: "2017-08-01" },
-    { sector_id: 6, percentage: 54.6, date: "2017-09-01" }, { sector_id: 6, percentage: 62.9, date: "2017-10-01" },
-    { sector_id: 6, percentage: 63.1, date: "2017-11-01" }, { sector_id: 6, percentage: 57.8, date: "2017-12-01" },
-
-    { sector_id: 7, percentage: 85.0, date: "2017-01-01" }, { sector_id: 7, percentage: 84.4, date: "2017-02-01" },
-    { sector_id: 7, percentage: 81.6, date: "2017-03-01" }, { sector_id: 7, percentage: 85.3, date: "2017-04-01" },
-    { sector_id: 7, percentage: 79.9, date: "2017-05-01" }, { sector_id: 7, percentage: 85.7, date: "2017-06-01" },
-    { sector_id: 7, percentage: 82.4, date: "2017-07-01" }, { sector_id: 7, percentage: 73.4, date: "2017-08-01" },
-    { sector_id: 7, percentage: 80.6, date: "2017-09-01" }, { sector_id: 7, percentage: 79.0, date: "2017-10-01" },
-    { sector_id: 7, percentage: 86.4, date: "2017-11-01" }, { sector_id: 7, percentage: 86.3, date: "2017-12-01" },
-
-    { sector_id: 8, percentage: 68.5, date: "2017-01-01" }, { sector_id: 8, percentage: 59.1, date: "2017-02-01" },
-    { sector_id: 8, percentage: 68.8, date: "2017-03-01" }, { sector_id: 8, percentage: 62.3, date: "2017-04-01" },
-    { sector_id: 8, percentage: 67.3, date: "2017-05-01" }, { sector_id: 8, percentage: 64.0, date: "2017-06-01" },
-    { sector_id: 8, percentage: 68.6, date: "2017-07-01" }, { sector_id: 8, percentage: 70.9, date: "2017-08-01" },
-    { sector_id: 8, percentage: 66.9, date: "2017-09-01" }, { sector_id: 8, percentage: 71.0, date: "2017-10-01" },
-    { sector_id: 8, percentage: 67.5, date: "2017-11-01" }, { sector_id: 8, percentage: 68.9, date: "2017-12-01" },
-
-    { sector_id: 9, percentage: 58.5, date: "2017-01-01" }, { sector_id: 9, percentage: 65.0, date: "2017-02-01" },
-    { sector_id: 9, percentage: 54.1, date: "2017-03-01" }, { sector_id: 9, percentage: 60.1, date: "2017-04-01" },
-    { sector_id: 9, percentage: 55.0, date: "2017-05-01" }, { sector_id: 9, percentage: 56.9, date: "2017-06-01" },
-    { sector_id: 9, percentage: 57.9, date: "2017-07-01" }, { sector_id: 9, percentage: 55.5, date: "2017-08-01" },
-    { sector_id: 9, percentage: 64.0, date: "2017-09-01" }, { sector_id: 9, percentage: 59.9, date: "2017-10-01" },
-    { sector_id: 9, percentage: 65.8, date: "2017-11-01" }, { sector_id: 9, percentage: 61.5, date: "2017-12-01" },
-
-#2018
-capacities = Capacity.create([
     { sector_id: 1, percentage: 61.6, date: "2018-01-01" }, { sector_id: 1, percentage: 64.4, date: "2018-02-01" },
     { sector_id: 1, percentage: 66.8, date: "2018-03-01" }, { sector_id: 1, percentage: 67.6, date: "2018-04-01" },
     { sector_id: 1, percentage: 65.1, date: "2018-05-01" }, { sector_id: 1, percentage: 61.8, date: "2018-06-01" },
@@ -352,12 +281,9 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 54.9, date: "2018-05-01" }, { sector_id: 13, percentage: 53.6, date: "2018-06-01" },
     { sector_id: 13, percentage: 51.1, date: "2018-07-01" }, { sector_id: 13, percentage: 53.9, date: "2018-08-01" },
     { sector_id: 13, percentage: 46.0, date: "2018-09-01" }, { sector_id: 13, percentage: 49.2, date: "2018-10-01" },
-    { sector_id: 13, percentage: 44.5, date: "2018-11-01" }, { sector_id: 13, percentage: 42.8, date: "2018-12-01" }
-])
+    { sector_id: 13, percentage: 44.5, date: "2018-11-01" }, { sector_id: 13, percentage: 42.8, date: "2018-12-01" },
 
-#2019
-capacities = Capacity.create([
-    { sector_id: 1, percentage: 56.2, date: "2019-01-01" }, { sector_id: 1, percentage: 58.5 date: "2019-02-01" },
+    { sector_id: 1, percentage: 56.2, date: "2019-01-01" }, { sector_id: 1, percentage: 58.5, date: "2019-02-01" },
     { sector_id: 1, percentage: 58.8, date: "2019-03-01" }, { sector_id: 1, percentage: 61.6, date: "2019-04-01" },
     { sector_id: 1, percentage: 62.0, date: "2019-05-01" }, { sector_id: 1, percentage: 59.1, date: "2019-06-01" },
     { sector_id: 1, percentage: 58.7, date: "2019-07-01" }, { sector_id: 1, percentage: 60.5, date: "2019-08-01" },
@@ -446,11 +372,8 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 49.9, date: "2019-05-01" }, { sector_id: 13, percentage: 48.2, date: "2019-06-01" },
     { sector_id: 13, percentage: 48.5, date: "2019-07-01" }, { sector_id: 13, percentage: 47.5, date: "2019-08-01" },
     { sector_id: 13, percentage: 40.0, date: "2019-09-01" }, { sector_id: 13, percentage: 47.3, date: "2019-10-01" },
-    { sector_id: 13, percentage: 42.3, date: "2019-11-01" }, { sector_id: 13, percentage: 40.0, date: "2019-12-01" }
-])
+    { sector_id: 13, percentage: 42.3, date: "2019-11-01" }, { sector_id: 13, percentage: 40.0, date: "2019-12-01" },
 
-#2020
-capacities = Capacity.create([
     { sector_id: 1, percentage: 56.1, date: "2020-01-01" }, { sector_id: 1, percentage: 59.4, date: "2020-02-01" },
     { sector_id: 1, percentage: 51.6, date: "2020-03-01" }, { sector_id: 1, percentage: 42.0, date: "2020-04-01" },
     { sector_id: 1, percentage: 46.4, date: "2020-05-01" }, { sector_id: 1, percentage: 53.3, date: "2020-06-01" },
@@ -540,11 +463,8 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 31.7, date: "2020-05-01" }, { sector_id: 13, percentage: 43.1, date: "2020-06-01" },
     { sector_id: 13, percentage: 44.6, date: "2020-07-01" }, { sector_id: 13, percentage: 46.9, date: "2020-08-01" },
     { sector_id: 13, percentage: 44.7, date: "2020-09-01" }, { sector_id: 13, percentage: 54.0, date: "2020-10-01" },
-    { sector_id: 13, percentage: 49.9, date: "2020-11-01" }, { sector_id: 13, percentage: 49.7, date: "2020-12-01" }
-])
+    { sector_id: 13, percentage: 49.9, date: "2020-11-01" }, { sector_id: 13, percentage: 49.7, date: "2020-12-01" },
 
-#2021
-capacities = Capacity.create([
     { sector_id: 1, percentage: 57.2, date: "2021-01-01" }, { sector_id: 1, percentage: 58.3, date: "2021-02-01" },
     { sector_id: 1, percentage: 64.5, date: "2021-03-01" }, { sector_id: 1, percentage: 63.5, date: "2021-04-01" },
     { sector_id: 1, percentage: 61.5, date: "2021-05-01" }, { sector_id: 1, percentage: 64.9, date: "2021-06-01" },
@@ -634,11 +554,8 @@ capacities = Capacity.create([
     { sector_id: 13, percentage: 49.8, date: "2021-05-01" }, { sector_id: 13, percentage: 56.0, date: "2021-06-01" },
     { sector_id: 13, percentage: 54.8, date: "2021-07-01" }, { sector_id: 13, percentage: 55.3, date: "2021-08-01" },
     { sector_id: 13, percentage: 53.6, date: "2021-09-01" }, { sector_id: 13, percentage: 54.7, date: "2021-10-01" },
-    { sector_id: 13, percentage: 54.1, date: "2021-11-01" }, { sector_id: 13, percentage: 51.9, date: "2021-12-01" }
-])
+    { sector_id: 13, percentage: 54.1, date: "2021-11-01" }, { sector_id: 13, percentage: 51.9, date: "2021-12-01" },
 
-#2022
-capacities = Capacity.create([
     { sector_id: 1, percentage: 57.9, date: "2022-01-01" }, { sector_id: 1, percentage: 64.3, date: "2022-02-01" },
     { sector_id: 1, percentage: 67.1, date: "2022-03-01" }, { sector_id: 1, percentage: 67.5, date: "2022-04-01" },
     { sector_id: 1, percentage: 68.8, date: "2022-05-01" }, { sector_id: 1, percentage: 69.1, date: "2022-06-01" },
