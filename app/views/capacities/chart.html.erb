@@ -1,7 +1,18 @@
-<h1>Capacidades Instaladas</h1>
+<h1><strong>Capacidades Instaladas</strong></h1>
 
-<%= line_chart Capacity.group_by_month(:date).sum(:percentage)  %>
+<div class="btn-group" >
+  <%= button_to "2016",  chart_path, method: :get, params: { year: 2016 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2017",  chart_path, method: :get, params: { year: 2017 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2018",  chart_path, method: :get, params: { year: 2018 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2019",  chart_path, method: :get, params: { year: 2019 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2020",  chart_path, method: :get, params: { year: 2020 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2021",  chart_path, method: :get, params: { year: 2021 }, class: 'btn btn-dark btn-lg orden' %>
+  <%= button_to "2022",  chart_path, method: :get, params: { year: 2022 }, class: 'btn btn-dark btn-lg orden' %>
+</div>
 
-<%# <%= line_chart @sectors.map { |sector|
-    {name: sector.sector.name, data: Capacity.group_by_month(:date).sum(:percentage)}
-} %>
+<%= line_chart @capacities.joins(:sector).group('name').group_by_month(:date).sum(:percentage),
+ height: "700px", legend: "bottom", download: true %>
+<br>
+<h4>Si desea ver menos sectores, solo clickee el nombre del sector y dejara de mostrarse en pantalla</h4>
+
+<%#= console %>
