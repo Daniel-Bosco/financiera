@@ -8,8 +8,11 @@ class CapacitiesController < ApplicationController
   end
 
   def chart
-    @capacities = Capacity.where("date BETWEEN ':year-01-01' AND ':year-12-01'", year: params[:year].to_i ) unless params[:year].blank?
-
+    if params[:year].blank?
+      @capacities = Capacity.all
+    else
+      @capacities = Capacity.where("date BETWEEN ':year-01-01' AND ':year-12-01'", year: params[:year].to_i ) unless params[:year].blank?
+    end
   end
 
   # GET /capacities/1 or /capacities/1.json
