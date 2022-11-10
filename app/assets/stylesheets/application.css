@@ -24,13 +24,15 @@
     background-size: cover;
 }
 
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+/* marco de la web */
+.marco{
+  margin: 0px 1% 1% 1%;
+}
+
+.alinear{
+  display: flex;
+  justify-content: center;
+  padding: 23%;
 }
 
 /* botones y gráfica lado a lado */
@@ -48,15 +50,34 @@
   padding-top: 10%;
 }
 
-/* formato del botón */
-.button-gray{
-  background-color: #e5b80b;
-  color: black;
+/* formato de botones */
+.button-gold{
+  background-color: rgba(254,243,225,1);
+  color: #2a2a2a;
   border: 0;
   border-radius: 5px;
   font-weight: 700;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin-top: 10px;
+}
+
+.button-gold:hover{
+  background-color: #e5b80b;
+  color: #2a2a2a;
+}
+
+.button-home{
+  background-color: #4c4c4c;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.button-home:hover{
+  background-color: white;
+  color: #4c4c4c;
 }
 
 /* grupo de botones */
