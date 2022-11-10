@@ -2,8 +2,8 @@
 
 <h1><%= t('.title') %></h1>
 
-<table>
-  <thead>
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
     <tr>
       <th><%= t('activerecord.attributes.sector.name') %></th>
       <th colspan="3"></th>
@@ -14,9 +14,9 @@
     <% @sectors.each do |sector| %>
       <tr>
         <td><%= sector.name %></td>
-        <td><%= link_to t(:ver), sector %></td>
-        <td><%= link_to t(:editar), edit_sector_path(sector) %></td>
-        <td><%= link_to t(:eliminar), sector, method: :delete, data: { confirm: t(:esta_seguro) } %></td>
+        <td><%= link_to t(:ver), sector, class: 'btn btn-sm btn-warning text-light' %></td>
+        <td><%= link_to t(:editar), edit_sector_path(sector), class: 'btn btn-sm btn-info text-light' %></td>
+        <td><%= link_to t(:eliminar), sector, method: :delete, data: { confirm: t(:esta_seguro) }, class: 'btn btn-sm btn-danger text-light' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to t('sectors.new.button'), new_sector_path %>
+<%= link_to t('sectors.new.button'), new_sector_path, class: 'btn btn-sm btn-success text-light' %>

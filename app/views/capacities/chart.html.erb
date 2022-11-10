@@ -1,16 +1,21 @@
-<h1><strong>Capacidades Instaladas</strong></h1>
+<div class="flex-container">
 
-<div class="btn-group" >
-  <%= button_to "2016",  chart_path, method: :get, params: { year: 2016 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2017",  chart_path, method: :get, params: { year: 2017 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2018",  chart_path, method: :get, params: { year: 2018 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2019",  chart_path, method: :get, params: { year: 2019 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2020",  chart_path, method: :get, params: { year: 2020 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2021",  chart_path, method: :get, params: { year: 2021 }, class: 'btn btn-dark btn-lg orden' %>
-  <%= button_to "2022",  chart_path, method: :get, params: { year: 2022 }, class: 'btn btn-dark btn-lg orden' %>
+  <div class="flex-child botones" >
+    <%= button_to "Todo",  chart_path, method: :get, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2016",  chart_path, method: :get, params: { year: 2016 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2017",  chart_path, method: :get, params: { year: 2017 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2018",  chart_path, method: :get, params: { year: 2018 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2019",  chart_path, method: :get, params: { year: 2019 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2020",  chart_path, method: :get, params: { year: 2020 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2021",  chart_path, method: :get, params: { year: 2021 }, class: 'btn btn-lg button-gray' %>
+    <%= button_to "2022",  chart_path, method: :get, params: { year: 2022 }, class: 'btn btn-lg button-gray' %>
+  </div>
+
+  <div class="flex-child" style="background-color: #ffffff">
+    <%= line_chart @capacities.joins(:sector).group('name').group_by_month(:date).sum(:percentage),
+    height: "700px", title: "Capacidades Instaladas", legend: "bottom", 
+    download: {filename: "Capacidades Instaladas", background: "#ffffff"}, 
+    suffix: "%", min: 0, max: 100, dataset: {borderWidth: 1, hidden: true} %>
+  </div>
+
 </div>
-
-<%= line_chart @capacities.joins(:sector).group('name').group_by_month(:date).sum(:percentage),
- height: "700px", legend: "bottom", download: true %>
-<br>
-<h4>Si desea ver menos sectores, solo clickee el nombre del sector y dejara de mostrarse en pantalla</h4>

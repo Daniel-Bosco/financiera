@@ -1,20 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Sector:</strong>
-  <%= @capacity.sector_id %>
-</p>
+<h1> <%= t('capacities.show.title') %> </h1>
 
-<p>
-  <strong>Percentage:</strong>
-  <%= @capacity.percentage %>
-</p>
+<strong> <%= t('activerecord.attributes.capacity.id') %> </strong>
+<p> <%= @capacity.id %> </p>
 
-<p>
-  <strong>Date:</strong>
-  <%= @capacity.date %>
-</p>
+<strong> <%= t('activerecord.attributes.capacity.sector_id') %> </strong>
+<p> <%= @capacity.sector.name %> </p>
 
+<strong> <%= t('activerecord.attributes.capacity.percentage') %> </strong>
+<p> <%= @capacity.percentage %> </p>
 
-<%= link_to 'Edit', edit_capacity_path(@capacity) %> |
-<%= link_to 'Back', capacities_path %>
+<strong> <%= t('activerecord.attributes.capacity.date') %> </strong>
+<p> <%= @capacity.date.strftime("%d/%m/%Y") %> </p>

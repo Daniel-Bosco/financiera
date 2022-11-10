@@ -2,8 +2,8 @@
 
 <h1><%= t('.title') %></h1>
 
-<table>
-  <thead>
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
     <tr>
       <th><%= t('activerecord.attributes.capacity.sector_id') %></th>
       <th><%= t('activerecord.attributes.capacity.date') %></th>
@@ -16,11 +16,11 @@
     <% @capacities.each do |capacity| %>
       <tr>
         <td><%= capacity.sector.name %></td>
-        <td><%= capacity.date %></td>
+        <td><%= capacity.date.strftime("%d/%m/%Y") %></td>
         <td><%= capacity.percentage %></td>
-        <td><%= link_to t(:ver), capacity %></td>
-        <td><%= link_to t(:editar), edit_capacity_path(capacity) %></td>
-        <td><%= link_to t(:eliminar), capacity, method: :delete, data: { confirm: t(:esta_seguro) } %></td>
+        <td><%= link_to t(:ver), capacity, class: 'btn btn-sm btn-warning text-light' %></td>
+        <td><%= link_to t(:editar), edit_capacity_path(capacity), class: 'btn btn-sm btn-info text-light' %></td>
+        <td><%= link_to t(:eliminar), capacity, method: :delete, data: { confirm: t(:esta_seguro) }, class: 'btn btn-sm btn-danger text-light' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to t('capacities.new.button'), new_capacity_path %>
+<%= link_to t('capacities.new.button'), new_capacity_path, class: 'btn btn-sm btn-success text-light' %>

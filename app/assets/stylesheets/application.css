@@ -14,24 +14,15 @@
  *= require_self
  */
 
- body{
-    /*background-image: url(milei.jpg);*/
+ /* fondo de milei */
+ .milei{
+    background-image: url(milei.jpg);
     background-attachment: fixed;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
-
- .button-gray{
-    background-color: #C4C4C4;
-    color: black;
-    border: 0;
-    border-radius: 5px;
-    font-weight: 700;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
 
 .vertical-center {
   margin: 0;
@@ -42,6 +33,33 @@
   transform: translateY(-50%);
 }
 
+/* botones y gráfica lado a lado */
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: auto;
+  padding-top: 20px;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+  padding-top: 10%;
+}
+
+/* formato del botón */
+.button-gray{
+  background-color: #e5b80b;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-top: 10px;
+}
+
+/* grupo de botones */
 .orden {
-  margin-left:5px;
+  margin-top: 10px;
 }
